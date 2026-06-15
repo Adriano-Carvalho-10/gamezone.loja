@@ -1,7 +1,9 @@
 🎮 GameZone Premium
+
 O GameZone Premium é uma aplicação web responsiva de e-commerce voltada para a venda de periféricos e equipamentos gamer. O projeto conta com uma interface moderna em modo escuro (dark mode), carrinho de compras dinâmico, histórico de pedidos local, formulário de contato integrado e um assistente virtual (chatbot) inteligente que combina respostas automatizadas locais com inteligência artificial via API.
 
 🚀 Funcionalidades
+
 Catálogo de Produtos: Exibição de periféricos gamers com imagens, descrições e preços atualizados.
 
 Barra de Pesquisa Inteligente: Filtra os produtos em tempo real na tela conforme o usuário digita. Caso nenhum produto seja encontrado, um aviso visual é exibido.
