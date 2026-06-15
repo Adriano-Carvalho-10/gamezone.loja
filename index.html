@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GameZone Premium</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🎮 GameZone</div>
+  <nav>
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#categorias">Categorias</a></li>
+      <li><a href="#produtos">Produtos</a></li>
+      <li><a href="#avaliacoes">Avaliações</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+  <div class="cart-icon" onclick="toggleCarrinho()">
+    <i class="fas fa-shopping-cart"></i>
+    <span id="cartCount">0</span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="inicio" class="hero">
+  <div class="hero-content">
+    <h1>Monte o Setup Gamer dos Seus Sonhos</h1>
+    <p>Produtos de alta performance, entrega rápida e preços competitivos.</p>
+    <a href="#produtos" class="btn">Comprar Agora</a>
+  </div>
+</section>
+
+<!-- PESQUISA -->
+<section class="search-section">
+  <input type="text" id="searchInput" placeholder="Pesquisar produtos...">
+</section>
+
+<!-- SOBRE -->
+<section id="sobre">
+  <h2>Sobre a GameZone</h2>
+  <div class="sobre-content">
+    <div class="sobre-card">
+      <span class="sobre-icon">🎮</span>
+      <h3>Quem Somos</h3>
+      <p>A GameZone é uma loja especializada em periféricos e equipamentos gamer, fundada por apaixonados por games que queriam oferecer os melhores produtos com o melhor custo-benefício do mercado.</p>
+    </div>
+    <div class="sobre-card">
+      <span class="sobre-icon">🏆</span>
+      <h3>Nossa Missão</h3>
+      <p>Proporcionar a melhor experiência gamer com produtos de alta qualidade, atendimento diferenciado e entrega rápida para todo o Brasil.</p>
+    </div>
+    <div class="sobre-card">
+      <span class="sobre-icon">🚀</span>
+      <h3>Nossos Diferenciais</h3>
+      <p>Garantia de 12 meses em todos os produtos, suporte técnico especializado, parcelamento em até 12x sem juros e frete grátis para compras acima de R$ 500.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIAS -->
+<section id="categorias">
+  <h2>Categorias</h2>
+  <div class="cards">
+    <div class="card categoria">🎧<h3>Headsets</h3></div>
+    <div class="card categoria">⌨️<h3>Teclados</h3></div>
+    <div class="card categoria">🖱️<h3>Mouses</h3></div>
+    <div class="card categoria">🪑<h3>Cadeiras</h3></div>
+  </div>
+</section>
+
+<!-- PRODUTOS -->
+<section id="produtos">
+  <h2>Produtos em Destaque</h2>
+  <div class="cards">
+
+    <div class="card produto">
+      <img src="https://images.unsplash.com/photo-1599669454699-248893623440?w=500" alt="Headset Gamer Pro">
+      <h3>Headset Gamer Pro</h3>
+      <p>Som 7.1 e microfone HD.</p>
+      <span>R$ 199,90</span>
+      <button onclick="comprar('Headset Gamer Pro',199.90)">Comprar</button>
+    </div>
+
+    <div class="card produto">
+      <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=500" alt="Teclado Mecânico RGB">
+      <h3>Teclado Mecânico RGB</h3>
+      <p>Switch Blue profissional.</p>
+      <span>R$ 299,90</span>
+      <button onclick="comprar('Teclado Mecânico RGB',299.90)">Comprar</button>
+    </div>
+
+    <div class="card produto">
+      <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500" alt="Mouse Gamer RGB">
+      <h3>Mouse Gamer RGB</h3>
+      <p>16000 DPI.</p>
+      <span>R$ 149,90</span>
+      <button onclick="comprar('Mouse Gamer RGB',149.90)">Comprar</button>
+    </div>
+
+    <div class="card produto">
+      <img src="https://media.istockphoto.com/id/1291605043/pt/foto/front-and-side-view-of-black-and-blue-leather-racing-car-design-gaming-chair-isolated-on-white.jpg?s=1024x1024&w=is&k=20&c=Z55JB32J8ZDCH5TDjbzw5WusWIOKd_ZLPDX1Q3pG67g=" alt="Cadeira Gamer Elite">
+      <h3>Cadeira Gamer Elite</h3>
+      <p>Máximo conforto.</p>
+      <span>R$ 999,90</span>
+      <button onclick="comprar('Cadeira Gamer Elite',999.90)">Comprar</button>
+    </div>
+
+    <div class="card produto">
+      <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=500" alt="Monitor Gamer 144Hz">
+      <h3>Monitor Gamer 144Hz</h3>
+      <p>Painel ultra fluido.</p>
+      <span>R$ 1299,90</span>
+      <button onclick="comprar('Monitor Gamer 144Hz',1299.90)">Comprar</button>
+    </div>
+
+    <div class="card produto">
+      <img src="https://images.unsplash.com/photo-1592840496694-26d035b52b48?w=500" alt="Controle Wireless">
+      <h3>Controle Wireless</h3>
+      <p>Compatível com PC.</p>
+      <span>R$ 249,90</span>
+      <button onclick="comprar('Controle Wireless',249.90)">Comprar</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- AVALIAÇÕES -->
+<section id="avaliacoes">
+  <h2>Avaliações</h2>
+  <div class="cards">
+    <div class="card">⭐⭐⭐⭐⭐<p>Excelente atendimento e entrega rápida.</p></div>
+    <div class="card">⭐⭐⭐⭐⭐<p>Produtos de qualidade e ótimo preço.</p></div>
+    <div class="card">⭐⭐⭐⭐⭐<p>Loja confiável e muito organizada.</p></div>
+  </div>
+</section>
+
+<!-- PEDIDOS -->
+<section id="pedidos">
+  <h2>📦 Meus Pedidos</h2>
+  <div id="historicoPedidos">
+    <p>Nenhum pedido realizado.</p>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+  <h2>Contato</h2>
+  <form onsubmit="enviarWhatsApp(event)">
+    <input type="text" id="nomeContato" placeholder="Nome" required>
+    <input type="email" id="emailContato" placeholder="Email" required>
+    <textarea id="mensagemContato" placeholder="Mensagem"></textarea>
+    <button type="submit">Enviar no WhatsApp</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 GameZone Premium</p>
+</footer>
+
+<!-- CARRINHO -->
+<div class="carrinho" id="carrinho">
+  <div class="carrinho-header">
+    <h2>🛒 Carrinho</h2>
+    <button onclick="toggleCarrinho()">✖</button>
+  </div>
+  <ul id="listaCarrinho"></ul>
+  <h3>Total: <span id="total">R$ 0,00</span></h3>
+  <button class="checkout-btn" onclick="abrirCheckout()">Finalizar Compra</button>
+</div>
+
+<!-- CHECKOUT -->
+<div class="checkout-modal" id="checkoutModal">
+  <div class="checkout-box">
+    <h2>Finalizar Pedido</h2>
+    <input type="text" id="nomeCliente" placeholder="Nome Completo">
+    <input type="text" id="cepCliente" placeholder="CEP">
+    <input type="text" id="enderecoCliente" placeholder="Endereço">
+    <select id="formaPagamento">
+      <option>PIX</option>
+      <option>Boleto</option>
+      <option>Cartão de Crédito</option>
+    </select>
+    <select id="parcelas">
+      <option>1x sem juros</option>
+      <option>2x sem juros</option>
+      <option>3x sem juros</option>
+      <option>6x sem juros</option>
+      <option>10x sem juros</option>
+      <option>12x sem juros</option>
+    </select>
+    <button onclick="finalizarCompra()">Confirmar Pedido</button>
+    <button onclick="fecharCheckout()">Cancelar</button>
+  </div>
+</div>
+
+<!-- CHATBOT -->
+<div class="chat-button" onclick="toggleChat()">💬</div>
+
+<div class="chat-container" id="chatContainer">
+  <div class="chat-header">🎮 Assistente GameZone</div>
+  <div class="chat-messages" id="chatMessages"></div>
+  <div class="chat-input">
+    <input id="userInput" type="text" placeholder="Digite sua mensagem...">
+    <button onclick="sendMessage()">Enviar</button>
+  </div>
+</div>
+
+<script src="loja.js"></script>
+<script src="chatbot.js"></script>
+
+</body>
+</html>
